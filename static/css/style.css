@@ -1,0 +1,23 @@
+body {
+    background-color: #5A3F26;
+    margin: 0px;
+}
+
+.header {
+    background-color: #F1C6A9;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 100px;
+}
+
+@media (max-width: 320px) {
+    .header{
+        padding-left: 1%;
+    }
+
+    
+}
+
+
