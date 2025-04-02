@@ -5,14 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <title>Document</title>
 </head>
 <body>
     <header class= "header">
         <div class="logo">
-            <a href="#"><img src="{% static 'img/logo.svg' %}" alt="Логотип"></a>
+            <a class="fullLogo" href="#"><img class="logo" src="{% static "img/logo.svg" %}" alt="">
+            <img class="logo__text" src="{% static "img/CapyBook.svg" %}" alt="">
+            <img class="logo__text--plnsht" src="{% static "img/CapyBookPlnsht.svg" %}" alt="">
+            </a>
         </div>
-
+        
+        <div class="search-from"> 
+            <input class="search-from__txt" type="text" placeholder= "Поиск">
+            <button class="search-from__btn"><img class="search-from__image" src="{% static 'img/Union.svg' %}" alt="image">
+            </button>
+        </div>
+        <div class="header-leftside">
+            <li class="kolokol"><img src="{% static 'img/kolokol.svg' %}" alt=""></li>
+            <li class="ava"><img src="{% static 'img/ava.svg' %}" alt=""></li>
+            <li><img src="{% static 'img/burger.svg' %}" alt=""></li>
+        </div>
     </header>
+    <div class="main">
+    {% block main %}
+        
+    {% endblock main %}
+    </div>
 </body>
+<script src="{% static 'js/main.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            loop: true,
+            freeMode: true,
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        });
+    </script>
 </html>

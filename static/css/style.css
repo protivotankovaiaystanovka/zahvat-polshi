@@ -1,6 +1,9 @@
 body {
     background-color: #5A3F26;
     margin: 0px;
+    text-decoration: none;
+    font-family: 'Comic Helvetic';
+    color: #5A3F26;
 }
 
 .header {
@@ -8,16 +11,144 @@ body {
     height: 60px;
     display: flex;
     align-items: center;
-    padding-left: 5%;
-    padding-right: 100px;
+    padding: 0 100px 0 100px;
+    justify-content: space-between;
+    margin: 0%;
+    @media (max-width: 1024px) {
+        padding: 0 30px 0 30px;
+    }
+    @media (max-width: 768px) {
+        padding: 0 10px 0 10px;
+    }
 }
 
-@media (max-width: 320px) {
-    .header{
-        padding-left: 1%;
+.search-from{
+    width: 446px;
+    background-color: #FFEBDE;
+    border-radius: 10px;
+    padding: 8px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 50px 0 50px;
+}
+.fullLogo{
+    display: flex;
+    flex-direction: row;
+    gap: 8px    ;
+}
+.logo__text{
+    display: none;
+    @media (min-width: 1024px) {
+        display: flex;
+    }
+}
+.logo__text--plnsht{
+    display: flex;
+    @media (max-width: 768px) {
+        display: none;
+    }
+    @media (min-width: 1024px) {
+        display: none;
     }
 
-    
+}
+.search-from__txt{
+    display: none;
+    background-color: #FFEBDE;
+    border: NONE;
+    outline: none;
+    width: 70px;
+    padding: 0%;
+    @media (min-width: 400px) {
+        display: flex;
+    }
+}
+
+.search-from__btn{
+    border: NONE;
+    background: none;
+}
+
+.search-from__image{
+    display: flex;
+    align-items: center;
+}
+
+.header-leftside{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.kolokol{
+    display: flex;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.ava{
+    display: flex;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.swiper-img{
+    width: 100%;
 }
 
 
+
+.swiper{
+    background-color: #FFD7BC;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.swiper-wrapper{
+    padding: 18px;
+}
+
+.main{
+    margin: 20px 100px;
+    @media(min-width: 768px){
+        margin: 20px;
+    }
+    @media(min-width: 400px){
+        margin: 10px;
+    }
+    @media(min-width: 1380px){
+        margin: 20px 100px;
+    }
+}
+
+.swiper-top{
+    padding-top: 18px;
+    padding-left: 18px;
+    font-size: 20px;
+}
+
+.swiper-slide{
+    width: auto !important;
+}
+
+.manga-name{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    margin-top: -36px;
+    width: 100%;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reklama_img{
+    width: 100%;
+}

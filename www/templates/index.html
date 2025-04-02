@@ -1,12 +1,64 @@
 {% extends 'base.html' %}
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CapyBook</title>
-</head>
-<body>
+{% load static %}
+
+{% block main %}
+
+<div class="reklama">
+    <img class=reklama_img src="{% static "img/poster.png" %}" alt="">
+</div>
+
+<div class="swiper">
+    <div class="swiper-top">Последние обновления</div>
+    <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="{% static "img/mangaplh.png" %}" alt="">
+                <div class="manga-name">Тетрадь смерти</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static "img/mangaplh.png" %}" alt="">
+                <div class="manga-name">Тетрадь смерти</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static "img/mangaplh.png" %}" alt="">
+                <div class="manga-name">Тетрадь смерти</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static "img/mangaplh.png" %}" alt="">
+                <div class="manga-name">Тетрадь смерти</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static "img/mangaplh.png" %}" alt="">
+                <div class="manga-name">Тетрадь смерти</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static "img/mangaplh.png" %}" alt="">
+                <div class="manga-name">Тетрадь смерти</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static "img/mangaplh.png" %}" alt="">
+                <div class="manga-name">Тетрадь смерти</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static "img/mangaplh.png" %}" alt="">
+                <div class="manga-name">Тетрадь смерти</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static "img/mangaplh.png" %}" alt="">
+                <div class="manga-name">Тетрадь смерти</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static "img/mangaplh.png" %}" alt="">
+                <div class="manga-name">Тетрадь смерти</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static "img/mangaplh.png" %}" alt="">
+                <div class="manga-name">Тетрадь смерти</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static "img/mangaplh.png" %}" alt="">
+                <div class="manga-name">Тетрадь смерти</div>
+            </div>
+    </div>
+</div>
+{% endblock main %}
     
-</body>
-</html>
