@@ -4,6 +4,11 @@ body {
     text-decoration: none;
     font-family: 'Comic Helvetic';
     color: #5A3F26;
+    min-height: 100vh;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -14,10 +19,14 @@ body {
     padding: 0 100px 0 100px;
     justify-content: space-between;
     margin: 0%;
-    @media (max-width: 1024px) {
+}
+@media (max-width: 1024px) {
+    .header {
         padding: 0 30px 0 30px;
     }
-    @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+    .header {
         padding: 0 10px 0 10px;
     }
 }
@@ -39,20 +48,26 @@ body {
 }
 .logo__text{
     display: none;
-    @media (min-width: 1024px) {
+}
+@media (min-width: 1024px) {
+    .logo__text {
         display: flex;
     }
 }
 .logo__text--plnsht{
     display: flex;
-    @media (max-width: 768px) {
-        display: none;
-    }
-    @media (min-width: 1024px) {
-        display: none;
-    }
-
 }
+@media (max-width: 768px) {
+    .logo__text--plnsht {
+        display: none;
+    }
+}
+@media (min-width: 1024px) {
+    .logo__text--plnsht {
+        display: none;
+    }
+}
+
 .search-from__txt{
     display: none;
     background-color: #FFEBDE;
@@ -60,7 +75,9 @@ body {
     outline: none;
     width: 70px;
     padding: 0%;
-    @media (min-width: 400px) {
+}
+@media (min-width: 400px) {
+    .search-from__txt {
         display: flex;
     }
 }
@@ -82,16 +99,29 @@ body {
     align-items: center;
 }
 
+.header-leftside ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
 .kolokol{
     display: flex;
-    @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+    .kolokol {
         display: none;
     }
 }
 
 .ava{
     display: flex;
-    @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+    .ava {
         display: none;
     }
 }
@@ -99,8 +129,6 @@ body {
 .swiper-img{
     width: 100%;
 }
-
-
 
 .swiper{
     background-color: #FFD7BC;
@@ -114,13 +142,21 @@ body {
 
 .main{
     margin: 20px 100px;
-    @media(min-width: 768px){
+    margin-bottom: 40px;
+    flex: 1;
+}
+@media(min-width: 768px) {
+    .main {
         margin: 20px;
     }
-    @media(min-width: 400px){
+}
+@media(min-width: 400px) {
+    .main {
         margin: 10px;
     }
-    @media(min-width: 1380px){
+}
+@media(min-width: 1380px) {
+    .main {
         margin: 20px 100px;
     }
 }
@@ -158,7 +194,9 @@ body {
     gap: 20px;
     width: 100%;
     margin-top: 20px;
-    @media(max-width: 1379px){
+}
+@media(max-width: 1379px) {
+    .grid-flex {
         flex-direction: column;
     }
 }
@@ -170,9 +208,11 @@ body {
     grid-column-gap: 20px;
     grid-row-gap: 12px;
     width: 100%;
-    @media(max-width: 1379px){
+}
+@media(max-width: 1379px) {
+    .grid-left {
         grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 }
 
@@ -183,9 +223,11 @@ body {
     grid-column-gap: 20px;
     grid-row-gap: 12px;
     width: 100%;
-    @media(max-width: 1379px){
+}
+@media(max-width: 1379px) {
+    .grid-right {
         grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 }
 
@@ -196,11 +238,52 @@ body {
     gap: 18px;
     display: flex;
     flex-direction: column;
-    @media(min-width: 1380px){
+}
+@media(min-width: 1380px) {
+    .grid-container {
         width: 100%;
-    }
+        position: absolute;
+
+
+.hr-line hr {
+    align-items: center;
+    border: none;
+    height: 2px;
+    background-color: #5A3F26;
+    width: 80%;
+    margin: 20px 0;
 }
 
-.manga-img{
-    width: 100%;
+.footer{
+    position: relative;
+    height: 454px;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    box-sizing: border-box;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center ;
+    flex-direction: column;
+    place-items: center;
 }
+
+.footer-icons{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.2);
+}
+
+
