@@ -1,8 +1,28 @@
+@font-face {
+    font-family: 'Comic-Helvetic';
+    src: url(./fonts/ComicHelvetic/ComicHelvetic_Light.otf);
+    font-weight: light;
+}
+
+@font-face {
+    font-family: 'Comic-Helvetic';
+    src: url('./fonts/ComicHelvetic/ComicHelvetic_Medium.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Comic-Helvetic';
+    src: url('./fonts/ComicHelvetic/ComicHelvetic_Heavy.otf');
+    /* src: local('./fonts/ComicHelvetic_Heavy.otf') format('truetype'); */
+    font-weight: bold;
+}
+
 body {
+    font-family: 'Comic-Helvetic';
+    font-weight: normal;
     background-color: #5A3F26;
     margin: 0px;
     text-decoration: none;
-    font-family: 'Comic Helvetic';
     color: #5A3F26;
     min-height: 100vh;
 
@@ -201,7 +221,7 @@ body {
     }
 }
 
-.grid-left{
+.grid-left {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -216,13 +236,13 @@ body {
     }
 }
 
-.grid-right{
+.grid-right {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 12px;
-    width: 100%;
+    width: 100px;
 }
 @media(max-width: 1379px) {
     .grid-right {
@@ -238,6 +258,7 @@ body {
     gap: 18px;
     display: flex;
     flex-direction: column;
+    max-width: 40%;
 }
 @media(min-width: 1380px) {
     .grid-container {
