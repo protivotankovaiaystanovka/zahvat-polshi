@@ -29,6 +29,7 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .header {
@@ -153,7 +154,8 @@ body {
 .swiper{
     background-color: #FFD7BC;
     border-radius: 20px;
-    margin-top: 15px;
+    margin-top: 18px;
+    display: block;
 }
 
 .swiper-wrapper{
@@ -194,7 +196,7 @@ body {
 .manga-name{
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
-    margin-top: -36px;
+    margin-top: -40px;
     width: 100%;
     border-radius: 20px;
     color: white;
@@ -279,17 +281,16 @@ body {
 @media(min-width: 1380px) {
     .grid-container {
         width: 100%;
-        position: absolute;
     }
 }
 
-.hr-line hr {
-    align-items: center;
+.hr-line{
+    width: 70%; /* Ширина линии */
+    height: 2px; /* Толщина линии */
+    background-color: #FFD7BC; /* Цвет линии */
+    margin: 0 auto 60px auto;
     border: none;
-    height: 2px;
-    background-color: #5A3F26;
-    width: 80%;
-    margin: 20px 0;
+    border-radius: 10px;
 }
 
 .footer{
@@ -299,8 +300,8 @@ body {
     left: 0;
     width: auto;
     box-sizing: border-box;
-    display: flex !important;
-    justify-content: center !important;
+    display: flex;
+    justify-content: center;
     align-items: center ;
     flex-direction: column;
     place-items: center;
@@ -327,4 +328,23 @@ body {
 .manga-img{
     width: 168px;
     height: 230px;
+}
+
+.collection-img{
+    width: 354px;
+    height: 216px;
+}
+
+
+#swiper-2{
+    display: block;
+}
+
+.footer-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 790px;
+    margin-top: 70px;
+    color: #F1C6A9;
 }

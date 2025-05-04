@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+    <link rel="stylesheet" href="{% static 'css/catalog.css' %}">
+
+    <div class="grid-container">
+        <div class="grid-title">
+            <p class="grid-title-text">Фильтры</p>
+        </div>
+
+        <div class="grid-item">
+            <p class="subtract-name">По популярности</p>
+            <img class="subtract-icon" src="{% static 'img/Subtract.svg' %}" alt="">
+        </div>
+        <div class="grid-item">
+            <p class="subtract-name">Жанры</p>
+        </div>
+        <div class="grid-item">
+            <p class="subtract-name">Теги</p>
+        </div>
+        <div class="grid-item">
+            <p class="subtract-name">Возрастной рейтинг</p>
+        </div>
+        <div class="grid-item">
+            <p class="subtract-name">Год релиза</p>
+        </div>
+        <div class="grid-item">
+            <p class="subtract-name">Количество глав</p>
+        </div>
+        <div class="grid-item">
+            <p class="subtract-name">Формат</p>
+        </div>
+        <div class="grid-item">
+            <p class="subtract-name">Оценка</p>
+        </div>
+        <div class="grid-item">
+            <p class="subtract-name">Статус</p>
+    </div>
+
+    
+{% endblock %}
