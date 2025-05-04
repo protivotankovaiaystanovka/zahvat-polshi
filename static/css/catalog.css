@@ -25,10 +25,16 @@ body {
 }
 
 .grid-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
     width: 327px;
     height: 50px;
-    background-color: #C99875;
+    background: #C99875;
     border-radius: 10px;
+    /* Убедитесь, что нет overflow: hidden */
+    overflow: visible; /* Важно! */
 }
 
 .grid-title {
@@ -45,6 +51,14 @@ body {
 .subtract-icon {
     width: 32px;
     height: 32px;
-    align-self: center;
+    object-fit: contain;
+    /* Уберите абсолютное позиционирование */
+    position: static; 
+}
+
+.subtract-name {
+    margin: 0;
+    white-space: nowrap; /* Запрет переноса текста */
+    flex-shrink: 0; /* Запрет сжатия текста */
 }
 
