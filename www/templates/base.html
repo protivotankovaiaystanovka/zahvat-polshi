@@ -11,7 +11,7 @@
 <body>
     <header class= "header">
         <div class="logo">
-            <a class="fullLogo" href="#"><img class="logo" src="{% static "img/logo.svg" %}" alt="">
+            <a class="fullLogo" href="{% url 'index' %}"><img class="logo" src="{% static "img/logo.svg" %}" alt="">
             <img class="logo__text" src="{% static "img/CapyBook.svg" %}" alt="">
             <img class="logo__text--plnsht" src="{% static "img/CapyBookPlnsht.svg" %}" alt="">
             </a>
@@ -44,6 +44,13 @@
             <img src="{% static 'img/icons/vk.svg' %}" alt="">
             <img src="{% static 'img/icons/pinterest.svg' %}" alt="">
             <img src="{% static 'img/icons/diskord.svg' %}" alt="">
+        </div>
+        <div class="footer-hyuter">
+            <p>О сайте</p>
+            <p>Контакты</p>
+            <p>Правила</p>
+            <p>Новости</p>
+            <p><a href="{% url 'donat' %}">Донаты</a></p> 
         </div>
         <div class="footer-text">
             <p>© 2025 CapyBook.com️</p>

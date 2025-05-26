@@ -276,8 +276,8 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 540px;
-
 }
+
 @media(min-width: 1380px) {
     .grid-container {
         width: 100%;
@@ -295,7 +295,7 @@ body {
 
 .footer{
     position: relative;
-    height: 454px;
+    height: 500px;
     bottom: 0;
     left: 0;
     width: auto;
@@ -347,4 +347,19 @@ body {
     gap: 790px;
     margin-top: 70px;
     color: #F1C6A9;
+}
+
+.footer-hyuter{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 30px;
+    color: #FFEBDE;
+}
+
+.footer-hyuter a {
+    color: inherit; /* Наследует цвет текста */
+    text-decoration: none; /* Убирает подчеркивание */
 }

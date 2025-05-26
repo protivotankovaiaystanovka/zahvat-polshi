@@ -4,39 +4,295 @@
 {% block main %}
     <link rel="stylesheet" href="{% static 'css/catalog.css' %}">
 
-    <div class="grid-container">
-        <div class="grid-title">
-            <p class="grid-title-text">Фильтры</p>
+    <div class="catalog-page">
+        <div class="filters-container">
+            <div class="filter-item">
+                <div class="filter-header">
+                    <p class="subtract-name">По популярности</p>
+                    <img class="subtract-icon" src="{% static 'img/Subtract.svg' %}" alt="">
+                </div>
+                <div class="filter-content">
+                    <!-- Здесь будет содержимое выпадающего меню -->
+                    <p class="filter-p">По популярности</p>
+                    <p class="filter-p">По рейтингу</p>
+                    <p class="filter-p">По просмотрам</p>
+                    <p class="filter-p">По количеству глав</p>
+                    <p class="filter-p">По дате релиза</p>
+                    <p class="filter-p">По дате обновления</p>
+                    <p class="filter-p">По дате добавления</p>
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-header">
+                    <p class="subtract-name">Жанры</p>
+                    <img class="subtract-icon" src="{% static 'img/Subtract.svg' %}" alt="">
+                </div>
+                <div class="filter-content">
+                    <!-- Здесь будет содержимое выпадающего меню -->
+                    <p class="filter-p">Боевик</p>
+                    <p class="filter-p">Драма</p>
+                    <p class="filter-p">Романтика</p>
+                    <p class="filter-p">Комедия</p>
+                    <p class="filter-p">Ужасы</p>
+                    <p class="filter-p">Исеай</p>
+                    <p class="filter-p">Фантастика</p>
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-header">
+                    <p class="subtract-name">Возрастной рейтинг</p>
+                    <img class="subtract-icon" src="{% static 'img/Subtract.svg' %}" alt="">
+                </div>
+                <div class="filter-content">
+                    <!-- Здесь будет содержимое выпадающего меню -->
+                    <p class="filter-p">Не указан</p>
+                    <p class="filter-p">6+</p>
+                    <p class="filter-p">12+</p>
+                    <p class="filter-p">16+</p>
+                    <p class="filter-p">18+</p>
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-header">
+                    <p class="subtract-name">Год релиза</p>
+                    <img class="subtract-icon" src="{% static 'img/Subtract.svg' %}" alt="">
+                </div>
+                <div class="filter-content">
+                    <!-- Здесь будет содержимое выпадающего меню -->
+                    <p class="filter-p">1850 - 1970гг</p>
+                    <p class="filter-p">1970 - 2000гг</p>
+                    <p class="filter-p">2000 - 2010гг</p>
+                    <p class="filter-p">2010 - 2015гг</p>
+                    <p class="filter-p">2015 - 2020гг</p>
+                    <p class="filter-p">2020 - 2025гг</p>
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-header">
+                    <p class="subtract-name">Количество глав</p>
+                    <img class="subtract-icon" src="{% static 'img/Subtract.svg' %}" alt="">
+                </div>
+                <div class="filter-content">
+                    <!-- Здесь будет содержимое выпадающего меню -->
+                    <p class="filter-p">1 - 10</p>
+                    <p class="filter-p">10 - 20</p>
+                    <p class="filter-p">20 - 50</p>
+                    <p class="filter-p">50 - 80</p>
+                    <p class="filter-p">80 - 100</p>
+                    <p class="filter-p">100+</p>
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-header">
+                    <p class="subtract-name">Формат</p>
+                    <img class="subtract-icon" src="{% static 'img/Subtract.svg' %}" alt="">
+                </div>
+                <div class="filter-content">
+                    <!-- Здесь будет содержимое выпадающего меню -->
+                    <p class="filter-p">Ёнкома</p>
+                    <p class="filter-p">Додзинси</p>
+                    <p class="filter-p">Сингл</p>
+                    <p class="filter-p">Вебтун</p>
+                    <p class="filter-p">Сборник</p>
+                    <p class="filter-p">В цвете</p>
+                    <p class="filter-p">Веб</p>
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-header">
+                    <p class="subtract-name">Оценка</p>
+                    <img class="subtract-icon" src="{% static 'img/Subtract.svg' %}" alt="">
+                </div>
+                <div class="filter-content">
+                    <!-- Здесь будет содержимое выпадающего меню -->
+                    <p class="filter-p">1+</p>
+                    <p class="filter-p">2+</p>
+                    <p class="filter-p">3+</p>
+                    <p class="filter-p">4+</p>
+                    <p class="filter-p">5</p>
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="filter-header">
+                    <p class="subtract-name">Статус</p>
+                    <img class="subtract-icon" src="{% static 'img/Subtract.svg' %}" alt="">
+                </div>
+                <div class="filter-content">
+                    <!-- Здесь будет содержимое выпадающего меню -->
+                    <p class="filter-p">Онгоинг</p>
+                    <p class="filter-p">Анонс</p>
+                    <p class="filter-p">Завершен</p>
+                    <p class="filter-p">Приостановлен</p>
+                    <p class="filter-p">Заморожен</p>
+                </div>
+            </div>
         </div>
 
-        <div class="grid-item">
-            <p class="subtract-name">По популярности</p>
-            <img class="subtract-icon" src="{% static 'img/Subtract.svg' %}" alt="">
+        <!-- Основной контент каталога (справа) -->
+        <div class="grid-container-catalog" id="">
+            <div class="grid-name">Каталог манги</div>
+            <div class="grid-catalog">
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="manga-img" src="{% static "img/mangaplh.png" %}" alt="">
+                    <div class="manga-name">Тетрадь смерти</div>
+                </div>
+            </div>
         </div>
-        <div class="grid-item">
-            <p class="subtract-name">Жанры</p>
-        </div>
-        <div class="grid-item">
-            <p class="subtract-name">Теги</p>
-        </div>
-        <div class="grid-item">
-            <p class="subtract-name">Возрастной рейтинг</p>
-        </div>
-        <div class="grid-item">
-            <p class="subtract-name">Год релиза</p>
-        </div>
-        <div class="grid-item">
-            <p class="subtract-name">Количество глав</p>
-        </div>
-        <div class="grid-item">
-            <p class="subtract-name">Формат</p>
-        </div>
-        <div class="grid-item">
-            <p class="subtract-name">Оценка</p>
-        </div>
-        <div class="grid-item">
-            <p class="subtract-name">Статус</p>
     </div>
-
-    
 {% endblock %}

@@ -3,7 +3,7 @@ body {
     font-weight: normal;
     font-size: 20px;
     background-color: #5A3F26;
-    margin: 0px;
+    margin: 0;
     text-decoration: none;
     color: #5A3F26;
     min-height: 100vh;
@@ -13,38 +13,53 @@ body {
     overflow-x: hidden;
 }
 
-.grid-container {
+.catalog-page {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.filters-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(7, 1fr);
     gap: 10px;
-    height: 612px;
     width: 367px;
-    box-sizing: border-box;
+    height: 100%;
+    background-color: #FFD7BC;
     padding: 20px;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.catalog-content {
+    flex-grow: 1;
+    background-color: #FFD7BC;
+    padding: 16px;
+    border-radius: 20px;
 }
 
 .grid-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    width: 327px;
+    width: 100%;
     height: 50px;
     background: #C99875;
     border-radius: 10px;
-    /* Убедитесь, что нет overflow: hidden */
-    overflow: visible; /* Важно! */
+    padding: 0 16px;
+    box-sizing: border-box;
 }
 
 .grid-title {
-    width: 327px;
     color: #5A3F26;
-    border-radius: 10px;
     font-size: 24px;
+    margin-bottom: 10px;
 }
+
 .grid-title-text {
-    margin: auto;
+    margin: 0;
     text-align: center;
 }
 
@@ -52,13 +67,133 @@ body {
     width: 32px;
     height: 32px;
     object-fit: contain;
-    /* Уберите абсолютное позиционирование */
-    position: static; 
 }
 
 .subtract-name {
     margin: 0;
-    white-space: nowrap; /* Запрет переноса текста */
-    flex-shrink: 0; /* Запрет сжатия текста */
+    white-space: nowrap;
 }
 
+/* Стили для контента каталога */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background: #C99875;
+    border-radius: 10px;
+    padding: 15px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container-catalog {
+    background-color: #FFD7BC;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+    max-width: 772px;
+}
+
+.grid-catalog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 12px;
+    width: 100%;
+}
+
+.grid-name {
+    text-align: center;
+    font-size: 24px;
+}
+
+.icon-container-catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.subtract-icon-catalog {
+    width: 52px;
+}
+
+
+
+
+
+
+.filter-content {
+    display: none; /* По умолчанию скрыто */
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #C99875;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: 2px solid #C99875;
+}
+
+.filter-header {
+    background: #C99875;
+    align-items: center;
+    cursor: pointer; /* Меняем курсор при наведении */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+/* Анимация для стрелочки (опционально) */
+.subtract-icon {
+    transition: transform 0.3s ease;
+}
+
+.filter-item.active .subtract-icon {
+    transform: rotate(180deg); /* Поворачиваем стрелку при открытии */
+}
+
+.filter-item.active .filter-content {
+    display: block; /* Показываем содержимое */
+}
+
+.filter-item {
+    position: relative; /* Для корректного позиционирования */
+}
+
+.filter-content {
+    border: 4px solid #BB8D6C;
+    display: none;
+    position: absolute; /* Выпадающий контент поверх других элементов */
+    width: 329px;
+    z-index: 2; /* Поверх других элементов */
+    max-height: 400px; /* Ограничение высоты с прокруткой */
+    overflow-y: auto; /* Прокрутка если контент не помещается */
+}
+
+.filter-item.active .filter-content {
+    display: block;
+}
+
+/* Фиксированная высота для заголовков */
+.filter-header {
+    height: 50px;
+    /* Остальные ваши стили */
+}
+
+.filter-item.active .filter-content {
+    opacity: 1;
+}

@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name="index"),
     path('catalog/', catalog, name="catalog"),
+    path('donat/', donat, name="donat"),
 ]

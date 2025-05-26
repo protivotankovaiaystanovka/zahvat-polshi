@@ -6,3 +6,6 @@ def index(request):
 
 def catalog(request):
     return render(request, 'catalog.html')
+
+def donat(request):
+    return render(request, 'donat.html')
