@@ -5,6 +5,57 @@
 <link rel="stylesheet" href="{% static 'css/donat.css' %}">
 
 <div class="donat-container">
-    
+    <div class="support-widget">
+        <!-- Первый макет -->
+        <div class="design-v1">
+          <h1 class="title">Капибаракалибара</h1>
+          
+          <div class="support-section">
+            <h2>Поддержите проект!</h2>
+            <p>Ваши деньги помогают нам развивать сайт и добавлять новые плошки</p>
+            <button class="action-btn donate-btn">Задонатить</button>
+          </div>
+          
+          <hr class="divider">
+          
+          <div class="premium-section">
+            <h3>Получить Premium!</h3>
+            <ul class="features">
+              <li>Возможность устанавливать обои в профиле</li>
+              <li>Получать уведомления о выходе глав</li>
+              <li>Эксклюзивный набор стикеров</li>
+            </ul>
+            <button class="action-btn premium-btn">Активировать</button>
+          </div>
+        </div>
+        
+        <!-- Второй макет -->
+        <div class="design-v2">
+          <div class="support-section">
+            <h1>Поддержите проект!</h1>
+            <p>Ваши донаты помогают нам развивать сайт и добавлять новые плошки</p>
+            <button class="action-btn">Задонатить</button>
+          </div>
+          
+          <div class="premium-section">
+            <h1>Получить Premium!</h1>
+            <ul class="features checkboxes">
+              <li>
+                <input type="checkbox" id="feature1" disabled>
+                <label for="feature1">Возможность устанавливать обои в профиле</label>
+              </li>
+              <li>
+                <input type="checkbox" id="feature2" disabled>
+                <label for="feature2">Получать уведомления о выходе глав</label>
+              </li>
+              <li>
+                <input type="checkbox" id="feature3" disabled>
+                <label for="feature3">Эксклюзивный набор стикеров</label>
+              </li>
+            </ul>
+            <button class="action-btn">Активировать</button>
+          </div>
+        </div>
+      </div>
 </div>
 {% endblock %}
