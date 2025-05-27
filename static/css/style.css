@@ -118,6 +118,7 @@ body {
     display: flex;
     gap: 32px;
     align-items: center;
+    margin-right: 70px;
 }
 
 .header-leftside ul {
@@ -363,3 +364,9 @@ body {
     color: inherit; /* Наследует цвет текста */
     text-decoration: none; /* Убирает подчеркивание */
 }
+
+
+
+
+
+

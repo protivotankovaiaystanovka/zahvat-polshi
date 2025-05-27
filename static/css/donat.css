@@ -16,106 +16,139 @@ body {
 }
 
 .support-widget {
-    font-family: 'Arial', sans-serif;
     max-width: 800px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-  
-  .design-v1, .design-v2 {
-    border: 1px solid #e0e0e0;
+    gap: 160px;
+    justify-content: center;
+    padding: 27px;
+}
+
+.design-v1, .design-v2 {
+    border: 1px solid #C99875;
     border-radius: 12px;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 35px;
     width: 347px;
     height: 445px;
     border-radius: 15px;
-    border: 6px solid #88624e;
-  }
-  
-  .title {
+    border: 6px solid #88624E;
+}
+
+.title {
     font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
-  }
-  
-  h1, h2, h3 {
-    color: #333;
+    color: #5A3F26;
+}
+
+
+
+.design-v1 h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #5A3F26;
     margin-top: 0;
-  }
-  
-  .design-v1 h2 {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .design-v1 h3 {
-    font-size: 18px;
+}
+
+.design-v2 h1 {
+    font-size: 28px;
     text-align: center;
     margin-bottom: 15px;
-  }
-  
-  .design-v2 h1 {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  
-  .support-section, .premium-section {
+    color: #5A3F26;
+    margin-top: 0;
+}
+
+.support-section, .premium-section {
     margin-bottom: 20px;
-  }
-  
-  p {
-    color: #666;
+}
+
+p {
+    color: #5A3F26;
     text-align: center;
     margin-bottom: 20px;
     line-height: 1.5;
-  }
-  
-  .features {
+}
+
+.features {
     list-style: none;
     padding: 0;
-    margin-bottom: 20px;
-  }
-  
-  .design-v1 .features li {
+    font-size: 20px;
+}
+
+.design-v1 .features li {
     padding: 8px 0;
-    border-bottom: 1px dashed #eee;
-    color: #444;
-  }
-  
-  .design-v2 .features.checkboxes li {
-    display: flex;
+    color: #5A3F26;
+}
+
+.design-v2 .features.checkboxes li {
+    display: flex-start;
+    gap: 10px;
     align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .design-v2 input[type="checkbox"] {
+    margin-bottom: 20px;
+}
+
+.design-v2 input[type="checkbox"] {
     margin-right: 10px;
     width: 16px;
     height: 16px;
-  }
-  
-  .action-btn {
+}
+
+.action-btn {
+    font-family: 'Comic-Helvetic';
+    font-size: 22px;
+    color: #5A3F26;
     display: block;
-    width: 100%;
+    width: 200px;
+    height: 60px;
     padding: 12px;
     border: none;
     border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
     text-align: center;
-  }
+    background-color: #C99875;
+    margin-top: 15px;
+}
+
+.btn-donat{
+    display: flex;
+    justify-content: center;
+}
+
+.action-btn2{
+    font-family: 'Comic-Helvetic';
+    font-size: 22px;
+    color: #5A3F26;
+    display: block;
+    width: 200px;
+    height: 60px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    background-color: #C99875;
+    margin-top: 67px;
+}
+
+.btn-donat2{
+    display: flex;
+    justify-content: center;
+}
 
 .divider {
     border: none;
     height: 1px;
-    background: #eee;
+    background: #C99875;
     margin: 20px 0;
 }
 
+.capy-love {
+    display: block;     
+    margin: 20px auto;     
+    max-width: 100%;   
+    height: auto;         
+}
